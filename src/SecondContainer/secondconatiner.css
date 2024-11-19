@@ -1,0 +1,355 @@
+body{
+    overflow-x: hidden;
+    background-color: #15161a;
+}
+.secondconatiner{
+    position: relative;
+    margin: auto;
+    width: 83%;
+    
+    max-height: 140vh;
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+
+    
+}
+.secondconatiner h1{
+   
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    font-size: 2.125rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+}
+.inputBox input{
+    color: white;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    padding: 18.5px 14px;
+    border-width: 2px;
+    border-color:rgb(133, 133, 133) ;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: inset;
+    font-weight: 400;
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+    margin-bottom: 0.5rem;
+    transition: 0.3s linear;
+    cursor:text;
+    outline: none;
+}
+.inputBox input:active, .inputBox input:hover{
+    transition: 0.3s linear;
+    outline: none;
+    border:1px solid white;
+    outline: none;
+   
+ 
+}
+.inputBox input:focus,.inputBox input:valid{
+  
+    border:1px solid white;   
+   z-index: 99;
+}
+.inputBox span {
+ 
+    color: rgb(133, 133, 133);
+    position: absolute;
+    transform: translateX(15%) translateY(-25%);
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+
+.inputBox input:focus + span,
+.inputBox input:valid +  span {
+    transform: translateX(2%) translateY(-145%);
+    z-index: 1111;
+    padding: 0 1rem;
+border-radius: 0;
+    background-color: #15161a;
+    
+}
+
+.divs{
+    background-color: #eebc1d;
+   padding: 1rem;
+   min-height: 100%;
+   text-wrap: nowrap;
+   display: flex;
+   justify-content:flex-end;
+   align-items: center;
+    color: black;
+    font-weight: 700;
+    z-index: 111;
+    font-family: Montserrat;
+}
+.secondGrid{
+    font-weight: 700;
+    font-family: Montserrat;
+  
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0rem;
+    text-align: right;
+}
+
+.showDataContent{
+    transition: 0.3s ease-in-out;
+    display: flex;
+    font-weight: 400;
+    text-wrap: nowrap;
+    justify-content: flex-end;
+min-height: 100%;
+  text-align: right;
+align-items: center;
+    padding: 1.3rem 0.5rem;
+    background-color: #16171b;
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+   
+}
+
+.marketcap{
+ 
+   padding-right: 1rem;
+    text-wrap: nowrap;
+}
+
+.showDataContent img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+   
+   
+}
+.title{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 5rem;
+    margin-left: 0.3rem;
+    text-align: center;
+   
+    
+}
+.showDataContent h1{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+margin-bottom: 0.4rem;
+
+}
+.coinLeft{
+    display: flex;
+    justify-content: flex-start;
+}
+.showDataContent p{
+    font-size: 14px;
+ z-index: 99;
+    text-transform: capitalize;
+  
+}
+.title p{
+    color: rgb(133, 133, 133);
+}
+.firstShowData{
+    justify-content: flex-start;
+}
+.pagination button{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    font-size: 14px;
+    padding:0 8px;
+    letter-spacing: 0.01071em;
+    line-height: 1.43;
+    transition: 0.2s ease-in-out 0.1s ;
+}
+.pagination button:hover{
+    background-color: rgba(139, 138, 138, 0.153);
+   
+    transition: 0.4s ease-in-out ;
+    border-radius: 100%;
+
+    padding:0 8px;
+  
+
+}
+
+@media screen and (max-width:745px) {
+    .showDataContent p{
+        font-size: 13px;
+    }
+   
+    .showDataContent h1{
+        font-size: 16px;
+    }
+    .showDataContent img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+       
+       
+    }
+    .divs{
+        font-size: 14px;
+    }
+    .secondGrid{
+        width: 120%;
+    }
+}
+@media screen and (max-width:668px) {
+   
+    .divs{
+        font-size: 11px;
+    }
+    .pagination button{
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        font-size: 11px;
+      
+    }
+    .secondGrid{
+        width: 125%;
+    }
+}
+@media screen and (max-width:560px) {
+    .showDataContent p{
+        font-size: 13px;
+    }
+    .showDataContent h1{
+        font-size: 16px;
+    }
+    .showDataContent img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+       
+       
+    }
+    .divs{
+        font-size: 10px;
+    }
+    .pagination button{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        font-size: 11px;
+      
+    }
+}
+@media screen and (max-width:509px) {
+    .showDataContent p{
+        font-size: 11px;
+    }
+    .showDataContent h1{
+        font-size: 14px;
+    }
+    .showDataContent img{
+        width: 37px;
+        height: 47px;
+        object-fit: contain;
+       
+       
+    }
+   
+    .divs{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:491px) {
+    .showDataContent p{
+        font-size: 14px;
+    }
+    .showDataContent h1{
+        font-size: 14px;
+    }
+    .showDataContent img{
+        width: 37px;
+        height: 47px;
+        object-fit: contain;
+       
+       
+    }
+    .divs{
+        font-size: 8px;
+    }
+    .pagination button{
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        font-size: 8px;
+      
+    }
+}
+@media screen and (max-width:429px) {
+    .showDataContent p{
+        font-size: 11px;
+    }
+    .showDataContent h1{
+        font-size: 10px;
+    }
+    .showDataContent img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+       
+       
+    }
+    .divs{
+        font-size: 7px;
+    }
+  
+}
+@media screen and (max-width:398px) {
+    .secondconatiner h1{
+   
+     text-align: center;
+        font-size: 1.125rem;
+       
+    }
+    .inputText{font-size: 12px;}
+    .showDataContent p{
+        font-size: 9px;
+    }
+    .showDataContent h1{
+        font-size: 10px;
+    }
+    .showDataContent img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+       
+       
+    }
+    .divs{
+        font-size: 7px;
+    }
+    .pagination button{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        font-size: 6px;
+      
+    }
+  
+}

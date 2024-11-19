@@ -1,0 +1,67 @@
+.banner{
+    height: 400px;
+    width: 100vw;
+    background-color: black;
+    font-family: "Montserrat";
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.banner img{
+    width: 1900px;
+    height:  2000px;
+    object-fit: cover;
+
+    opacity: 0.9;
+    
+}
+.content{
+
+    position: absolute;
+    color: white;
+    text-align: center;
+    height: 80%;
+ 
+}
+.content h2{
+    font-size: 3.75rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+
+}
+.content p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+    color: darkgrey;
+    margin-bottom: 1rem;
+}
+.marquee{
+
+    width: 80vw;
+    height: 65%;
+margin: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+@media screen and (max-width:491px){
+    .content h2{
+        font-size: 2.75rem;
+      
+    
+    }
+    .content p{
+        padding: 0 1rem;
+        text-wrap: wrap;
+        font-size: 0.775rem;
+        
+    }
+    .banner{
+        height: 450px;}
+}

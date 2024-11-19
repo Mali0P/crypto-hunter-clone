@@ -1,0 +1,28 @@
+.graphDiv{
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+    padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loadingBarGraph{
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+   border-top-color:gold ;
+   background-color: transparent;
+    border-radius: 100%;
+    animation: rotateLoader 0.6s linear infinite;
+}
+@keyframes rotateLoader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
